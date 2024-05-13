@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from 'antd';
 import _ from 'lodash';
 import ButtonGroup from './ButtonGroup';
+import ButtonGroup2 from './ButtonGroup2';
 
 const radomLetter = () => String.fromCharCode(65 + Math.floor(_.random(0, 25)));
 
@@ -40,6 +41,7 @@ export default function App() {
         reset
       </Button>
       <ButtonGroup items={items} />
+      <ButtonGroup2 items={items} />
     </>
   );
 }
